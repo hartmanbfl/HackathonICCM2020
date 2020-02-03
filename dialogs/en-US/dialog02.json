@@ -1,0 +1,79 @@
+{
+  "label": "evil-in-the-world",
+  "prompt": "I can't believe there was another shooting.  There is just so much evil in the world",
+  "children": [
+    {
+      "label": "diag02_001",
+      "prompt": "Why do you think there is so much evil?  Where is this evil coming from?",
+      "children": [
+        {
+          "label": "diag02_003",
+          "prompt": "I really don't know. Maybe from violent movies and video games.",
+          "children": [
+            {
+              "label": "diag02_004",
+              "prompt": "There is so much violence out there.  Did you know that I believe that one day I will live in a world without any evil or suffering?",
+              "children": [
+                {
+                  "label": "diag02_005",
+                  "prompt": "Really?  How can that be?",
+                  "children": [
+                    {
+                      "label": "diag02_008",
+                      "prompt": "I believe that one day God will restore the world to a perfect state",
+                      "children": [
+                        {
+                          "label": "diag02_009",
+                          "prompt": "If there is a God, why would He allow so much suffering in the world now?",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "label": "diag02_010",
+                      "prompt": "I believe that Jesus came to this world in order to redeem it so that we can have the hope of a world without pain or suffering",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "diag02_011",
+              "prompt": "Do you think we'll ever see a day where there is no violence?  Peace on earth?",
+              "children": [
+                {
+                  "label": "diag02_012",
+                  "prompt": "No way, things have always been pretty bad and I can't imagine it getting much better.",
+                  "children": [
+                    {
+                      "label": "diag02_013",
+                      "prompt": "Actually, I believe there will be a day without any pain, suffering, or evil",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "diag02_002",
+      "prompt": "How has this experience affected the way you look at God?",
+      "children": [
+        {
+          "label": "diag02_006",
+          "prompt": "It seems like God doesn't care at all.  How could He let things like this happen?",
+          "children": null
+        },
+        {
+          "label": "diag02_007",
+          "prompt": "God just doesn't seem to be involved in what's happening here on Earth.",
+          "children": null
+        }
+      ]
+    }
+  ]
+}

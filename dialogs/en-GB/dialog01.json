@@ -1,0 +1,46 @@
+{
+  "label": "diag03_001",
+  "prompt": "I am so tired of hearing about Brexit",
+  "children": [
+    {
+      "label": "diag03_002",
+      "prompt": "What is it about Brexit that upsets you?",
+      "children": [
+        {
+          "label": "diag03_003",
+          "prompt": "There is just so much uncertainty",
+          "children": [
+            {
+              "label": "diag03_005",
+              "prompt": "Are you concerned how Brexit will affect you personally?",
+              "children": [
+                {
+                  "label": "diag03_006",
+                  "prompt": "Yes, I am concerned that it will really damage our economy.",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "diag03_004",
+          "prompt": "I just wish we had more unity as a country",
+          "children": [
+            {
+              "label": "diag03_007",
+              "prompt": "What is it about unity that's important to you?",
+              "children": [
+                {
+                  "label": "diag03_008",
+                  "prompt": "I just think everything is better when we all get along.",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

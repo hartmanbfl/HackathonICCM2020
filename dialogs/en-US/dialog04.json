@@ -1,0 +1,78 @@
+{
+  "label": "diag04_001",
+  "prompt": "Man, this weather has been really crazy",
+  "children": [
+    {
+      "label": "diag04_002",
+      "prompt": "Yes, I've lived here for only a little bit and I can't figure it out.  Have you lived here long?",
+      "children": [
+        {
+          "label": "diag04_003",
+          "prompt": "Yeah, I've lived in this area almost my entire life.",
+          "children": [
+            {
+              "label": "diag04_004",
+              "prompt": "What kind of things do you like to do on the weekends?",
+              "children": [
+                {
+                  "label": "diag04_005",
+                  "prompt": "Usually I try to get caught up with things around the house and then watch a movie with my kids or something like that.  If the weather is nice we try to do something outside.",
+                  "children": [
+                    {
+                      "label": "diag04_007",
+                      "prompt": "Same here.  We also usually go to church Sunday morning.  Do you go to church at all?",
+                      "children": [
+                        {
+                          "label": "diag04_012",
+                          "prompt": "I used to go as a kid, but now just once in a while.  Definitely on Christmas and Easter.",
+                          "children": null
+                        },
+                        {
+                          "label": "diag04_013",
+                          "prompt": "Yeah, we try to go to Mass every Sunday",
+                          "children": null
+                        },
+                        {
+                          "label": "diag04_014",
+                          "prompt": "No, I just don't see a need for church.  I don't really believe in that stuff",
+                          "children": null
+                        }
+                      ] 
+                    }
+                  ]
+                },
+                {
+                  "label": "diag04_006",
+                  "prompt": "Pretty much the usual.  Work around the house on Saturday and then we watch football on Sunday.",
+                  "children": [
+                    {
+                      "label": "diag04_008",
+                      "prompt": "yeah, our team has been doing really well.  I try to watch the games too after church on Sunday.  Do you go to church at all?",
+                      "children": [
+                        {
+                          "label": "diag04_009",
+                          "prompt": "I used to go as a kid, but now just once in a while.  Definitely on Christmas and Easter.",
+                          "children": null
+                        },
+                        {
+                          "label": "diag04_010",
+                          "prompt": "Yeah, we try to go to Mass every Sunday",
+                          "children": null
+                        },
+                        {
+                          "label": "diag04_011",
+                          "prompt": "No, I just don't see a need for church.  I don't really believe in that stuff",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "label": "diag05_001",
+  "prompt": "I’m so excited about the Olympics in Paris in 2024.  I think it’s great to have them in Europe.",
+  "children": [
+    {
+      "label": "diag05_002",
+      "prompt": "What do you like about them so much?",
+      "children": [
+        {
+          "label": "diag05_003",
+          "prompt": "All the ceremony and the idea of people from all over the world coming together.  And, a bunch of different sports, not just one, like Football in the World Cup.",
+          "children": [
+            {
+              "label": "diag05_004",
+              "prompt": "What is your favorite sport?",
+              "children": [
+                {
+                  "label": "diag05_005",
+                  "prompt": "I like the gymnastics competitions.  So powerful and graceful at the same time.",
+                  "children": [
+                    {
+                      "label": "diag05_006",
+                      "prompt": "Do you know much about the different events?",
+                      "children": [
+                        {
+                          "label": "diag05_007",
+                          "prompt": "not really, but my favorite is the floor exercise",
+                          "children": [
+                            {
+                              "label": "diag05_008",
+                              "prompt": "why is that your favorite?",
+                              "children": [
+                                {
+                                  "label": "diag05_009",
+                                  "prompt": "The athletes perform over a bigger space, not just on one set of bars or the horse, in a small place.  They are really good.",
+                                  "children": [
+                                    {
+                                      "label": "diag05_010",
+                                      "prompt": "What makes a gymnast good?",
+                                      "children": [
+                                        {
+                                          "label": "diag05_011",
+                                          "prompt": "They don’t make mistakes",
+                                          "children": [
+                                            {
+                                              "label": "diag05_012",
+                                              "prompt": "Do you think you’re good?",
+                                              "children": [
+                                                {
+                                                  "label": "diag05_013",
+                                                  "prompt": "Well, I make plenty of mistakes.",
+                                                  "children": [
+                                                    {
+                                                      "label": "diag05_014",
+                                                      "prompt": "What makes a person bad or good?",
+                                                      "children": [
+                                                        {
+                                                          "label": "diag05_015",
+                                                          "prompt": "If he does more good things than bad, I guess.",
+                                                          "children": [
+                                                            {
+                                                              "label": "diag05_016",
+                                                              "prompt": "What if you had to make 0 mistakes to be good?",
+                                                              "children": [
+                                                                {
+                                                                  "label": "diag05_017",
+                                                                  "prompt": "that would be impossible, I guess",
+                                                                  "children": [
+                                                                    {
+                                                                      "label": "diag05_018",
+                                                                      "prompt": "What if there is a way for all your mistakes to be wiped out?",
+                                                                      "children": [
+                                                                        {
+                                                                          "label": "diag05_019",
+                                                                          "prompt": "Yeah, I think that might work.",
+                                                                          "children": null
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "label": "diag03_001",
+  "prompt": "Did you see the game yesterday?  Our running back was really good!",
+  "children": [
+    {
+      "label": "diag03_002",
+      "prompt": "No, I didn't see it.  What did he do that was so good?",
+      "children": [
+        {
+          "label": "diag03_004",
+          "prompt": "He ran for over 150 yards and scored two touchdowns!",
+          "children": [
+            {
+              "label": "diag03_005",
+              "prompt": "I'm curious, was everyone on the team good?",
+              "children": [
+                {
+                  "label": "diag03_006",
+                  "prompt": "No, the kicker was terrible.  He missed an extra point and a field goal.",
+                  "children": [
+                    {
+                      "label": "diag03_007",
+                      "prompt": "Yeah that's not good, especially since that is his main job.  What is considered good in your line of work?",
+                      "children": [
+                        {
+                          "label": "diag03_010",
+                          "prompt": "I work at a restaurant, so basically good is when the customers are happy.",
+                          "children": [
+                            {
+                              "label": "diag03_012",
+                              "prompt": "Have so ever thought of what makes a person good, regardless of what they do for work?",
+                              "children": null
+                            }
+                          ]
+                        },
+                        {
+                          "label": "diag03_011",
+                          "prompt": "I'm an accountant, so basically good is when everything adds up correctly",
+                          "children": [
+                            {
+                              "label": "diag03_013",
+                              "prompt": "Have so ever thought of what makes a person good, regardless of what they do for work?",
+                              "children": null 
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "diag03_003",
+      "prompt": "Yes, I saw it and it was great.  I'm curious, do you think everyone on the team was good?",
+      "children": [
+        {
+          "label": "diag03_008",
+          "prompt": "No, the kicker was terrible.  He missed an extra point and a field goal.",
+          "children": [
+            {
+              "label": "diag03_009",
+              "prompt": "Yeah that's not good, especially since that is his main job.  What is considered good in your line of work?",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

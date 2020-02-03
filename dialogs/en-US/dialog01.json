@@ -1,0 +1,185 @@
+{
+  "label": "hell-going",
+  "prompt": "How could a good God send people to Hell?",
+  "children": [
+    {
+      "label": "hell-believe",
+      "prompt": "So do you believe in Hell?",
+      "children": [
+        {
+          "label": "hell-believe-yes",
+          "prompt": "Yes, I think there is a Hell for really bad people",
+          "children": [
+            {
+              "label": "bad-people",
+              "prompt": "So how would you define a bad person?  Who do you think is a really bad person",
+              "children": [
+                {
+                  "label": "more-bad-than-good",
+                  "prompt": "Someone who does more bad things than good",
+                  "children": [
+                    {
+                      "label": "consider-good-person",
+                      "prompt": "So would you consider yourself a good person?",
+                      "children": [
+                        {
+                          "label": "good-person-yes",
+                          "prompt": "Yes, I think that I am a good person.  I do more good things than bad",
+                          "children": [
+                            {
+                              "label": "bible-good-person",
+                              "prompt": "Did you know that the Bible says that none of us is good?",
+                              "children": [
+                                {
+                                  "label": "i-dont-believe-bible",
+                                  "prompt": "To be honest, I really don't believe in the Bible",
+                                  "children" : null
+                                },
+                                {
+                                  "label": "did-not-know-bible",
+                                  "prompt": "No, I did not know that.",
+                                  "children": null
+                                },
+                                {
+                                  "label": "mother-teresa",
+                                  "prompt": "That can't be true.  What about people like Ghandi or Mother Teresa?",
+                                  "children": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "terrible-like-hitler",
+                  "prompt": "Someone who kills a lot of people like Hitler, Stalin or Jack the Ripper",
+                  "children": [
+                    {
+                      "label": "terrible-but-i-am-good",
+                      "prompt": "Yes, I agree that they were evil, but do you consider yourself a good person?",
+                      "children": [
+                        {
+                          "label": "good-person-in-comparison",
+                          "prompt": "Yes, compared to them I'm pretty good I think.",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "hell-defined",
+              "prompt": "So what do you think Hell is?",
+              "children": null
+            }
+          ]
+        },
+        {
+          "label": "hell-believe-no",
+          "prompt": "No, to be honest I don't believe in Heaven or Hell",
+          "children" : [
+            {
+              "label": "afterlife",
+              "prompt": "Well, what are your thought about life after death?  What do you think happens to us after we die?",
+              "children": [
+                {
+                  "label": "heaven-life-after-death",
+                  "prompt": "I think we just exist in a higher state which I consider to be Heaven",
+                  "children": [
+                    {
+                      "label": "higher-state",
+                      "prompt": "That's very interesting.  I'm curious, do you believe that we live in this state forever?  Do we have an eternal existance?",
+                      "children": [
+                        {
+                          "label": "higher-state-do-not-know",
+                          "prompt": "I really do not know.  It's just what I think.",
+                          "children": null 
+                        },
+                        {
+                          "label": "higher-state-probably",
+                          "prompt": "Yeah, I guess we just continue to exist forever sort of like ghosts",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "good-god",
+      "prompt": "What do you think a good God is like?",
+      "children": [
+        {
+          "label": "fair-god",
+          "prompt": "I think God would be fair",
+          "children": [
+            {
+              "label": "god-is-just",
+              "prompt": "Did you know that God is just and considers all of us guilty of sin?",
+              "children": null
+            }
+          ]
+        },
+        {
+          "label": "no-hell-god",
+          "prompt": "I just don't think a loving God would create a place as terrible as Hell",
+          "children": [
+            {
+              "label": "god-is-righteous",
+              "prompt": "I agree that Hell is a terrible place.  Did you know, though, that God can only have good and righteousness in His presence?",
+              "children": null
+            }
+          ]
+        },
+        {
+          "label": "love-god",
+          "prompt": "I believe that God loves everyone",
+          "children": [
+            {
+              "label": "god-is-love",
+              "prompt": "That is true.  God does love everyone.  Did you know that God loved us so much that he became a human being and died for us?",
+              "children": [
+                {
+                  "label": "he-could-not-love-me",
+                  "prompt": "Yeah, but I don't think he really loves me.  I've done too many bad things in my life.",
+                  "children": null
+                },
+                {
+                  "label": "if-love-why-hell",
+                  "prompt": "Ok yeah, I've heard the stories.  But why would God make a place like Hell?",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "deserve-heaven",
+      "prompt": "Do you think that we all deserve to go to Heaven?",
+      "children": [
+        {
+          "label": "heaven-believe-yes",
+          "prompt": "Yes, I believe as long as we are good we go to Heaven",
+          "children": null
+        },
+        {
+          "label": "heaven-believe-no",
+          "prompt": "No, to be honest I don't believe in Heaven or Hell",
+          "children": null
+        }
+      ]
+    }
+  ]
+}
