@@ -25,14 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        echo "Here?";
-//        Conversation::all());
-//        $conversations = Conversation::whereParentId(null)->orderBy(['conversation_id','id']);
-        $conversations = Conversation::orderBy('conversation_id')->orderBy('id')->get();
-//        dd($conversations);
-
-        $kategorieDAO = new KategorieDAO($conversations);
-    
-        return view('home', ['kategorieDAO' => $kategorieDAO]);
+        $conversations = Conversation::whereConversationId(0)->orderBy('sentence')->get();
+        return view('home', ['conversations' => $conversations]);
     }
 }
