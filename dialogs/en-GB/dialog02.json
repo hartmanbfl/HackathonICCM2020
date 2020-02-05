@@ -1,0 +1,58 @@
+{
+  "label": "diag03_001",
+  "prompt": " how ist the weather ?",
+  "children": [
+    {
+      "label": "diag03_002",
+      "prompt": "Good",
+      "children": [
+        {
+          "label": "diag03_003",
+          "prompt": "What means good to you?",
+          "children": [
+            {
+              "label": "diag03_005",
+              "prompt": "Something pleasing to me.",
+              "children": [
+                {
+                  "label": "diag03_006",
+                  "prompt": "If there was always good weather we would have a water problem.",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+	  ]
+	},
+	{
+	  "label": "diag03_004",
+	  "prompt": "Bad",
+	  "children": [
+		{
+		  "label": "diag03_007",
+		  "prompt": "What means bad to you?",
+		  "children": null
+		}
+	  ]
+	},
+	{
+	  "label": "diag03_004",
+	  "prompt": "Mixed",
+	  "children": [
+		{
+		  "label": "diag03_007",
+		  "prompt": "What would good weather be like for you?",
+		  "children": null
+		  ]
+		},
+		{
+		  "label": "diag03_007",
+		  "prompt": " Is this more good for you or more bad for you if it is mixed?",
+		  "children": null
+		  ]
+		}
+	  ]
+	}
+  ]
+}
