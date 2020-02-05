@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $conversations = Conversation::whereConversationId(0)->orderBy('sentence')->get();
+        $conversations = Conversation::whereConversationId(null)->orderBy('sentence')->get();
         return view('home', ['conversations' => $conversations]);
     }
 }

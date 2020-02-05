@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Conversation extends Model
 {
+    protected $fillable = [
+        "sentence",
+        "conversation_id",
+    ];
+
     public function conversations()
     {
         return $this->hasMany(Conversation::class);

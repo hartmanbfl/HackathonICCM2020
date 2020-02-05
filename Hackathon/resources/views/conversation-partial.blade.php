@@ -1,11 +1,11 @@
-<li>{{ $conversation->sentence }} {E} {-} {+}<br>
+<li>@livewire('sentence', $conversation)<br>
 @if ($conversation->conversations)
     <ul>
         @foreach ($conversation->conversations as $conversation)
             @include('conversation-partial', ['conversation' => $conversation])
         @endforeach
         <li>
-            + New level
+            @livewire('new-sentence', $conversation)
         </li>
     </ul>
 @endif
