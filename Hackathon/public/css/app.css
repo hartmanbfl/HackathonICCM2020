@@ -10899,6 +10899,10 @@ body {
   padding-right: 26px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .flex-center {
   align-items: center;
   display: flex;
