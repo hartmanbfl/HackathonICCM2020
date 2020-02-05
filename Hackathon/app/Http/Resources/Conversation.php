@@ -31,8 +31,8 @@ class Conversation extends JsonResource
     protected function convertConversation(ConversationModel $conversation)
     {
         return [
-            'id'        => $conversation->id,
-            'sentence'  => $conversation->sentence,
+            'label'     => $conversation->id,
+            'prompt'    => $conversation->sentence,
             'children'  => $this->convertConversations($conversation->conversations)
         ];
     }
