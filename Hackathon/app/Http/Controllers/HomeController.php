@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Conversation;
 use Illuminate\Http\Request;
-use App\Conversation;
 use App\Services\KategorieDAO;
 
 class HomeController extends Controller
