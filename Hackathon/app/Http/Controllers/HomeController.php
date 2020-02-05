@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Conversation;
 use Illuminate\Http\Request;
+use App\Services\KategorieDAO;
 
 class HomeController extends Controller
 {
@@ -24,14 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $conversations = Conversation::whereConversationId(null)->with('conversationTree')->get();
+//        echo "Here?";
+//        Conversation::all());
+//        $conversations = Conversation::whereParentId(null)->orderBy(['conversation_id','id']);
+        $conversations = Conversation::orderBy('conversation_id')->orderBy('id')->get();
+//        dd($conversations);
 
-        foreach($conversations as $conversation)
-        {
-            dump($conversation);
-        }
-
-
-        return view('home');
+        $kategorieDAO = new KategorieDAO($conversations);
+    
+        return view('home', ['kategorieDAO' => $kategorieDAO]);
     }
 }

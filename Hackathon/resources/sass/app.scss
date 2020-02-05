@@ -20,10 +20,12 @@ body {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .full-height {
-  height: 100vh;
+  // height: 100vh;
 }
 
 .flex-center {
@@ -47,12 +49,21 @@ body {
 }
 
 .title {
-  font-size: 84px;
+  font-size: clamp(25px, 8vw, 60px);
+  font-weight: bold;
+  // line-height: 12vw;
+  margin-top: calc(7vw + 15px);
 }
 
 .subtitle {
-  margin-top: -20px;
-  font-size: 64px;
+  font-size: clamp(32px, 10vw, 75px);
+  margin-top: -30px;
+}
+
+.paragraph {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: left;
 }
 
 .links>a {
@@ -66,5 +77,34 @@ body {
 }
 
 .m-b-md {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+// ----Outline Formatting----
+// borrowed from https://www.w3schools.com/howto/howto_js_collapsible.asp
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
