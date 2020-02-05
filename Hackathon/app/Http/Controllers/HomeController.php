@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Conversation;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $conversations = Conversation::whereConversationId(null)->with('conversationTree')->get();
+
+        foreach($conversations as $conversation)
+        {
+            dump($conversation);
+        }
+
+
         return view('home');
     }
 }
