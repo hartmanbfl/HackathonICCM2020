@@ -21,7 +21,7 @@ $katIdAnzeige = "-1";
                             echo"<tr><td>";
                             ?>
                             <a href='kategorieHinzufuegen.php?par=neuInHierarchie&beforeId=0&eventId=<?php echo $email ?? ''; ?>&insertLevel=0'>
-                                <img src='../../img/neu.png'>Neue Hauptkategorie
+                                <img src='..\images\neu.png'>Neue Hauptkategorie
                                 <span class="glyphicon glyphicon-plus-sign"></span></a>
                             <?php
                             echo"</td></tr>";
@@ -32,17 +32,17 @@ $katIdAnzeige = "-1";
                                 $katVO = $kategorieArray[$i];
                                 for ($j = 0; $j < ($katVO->getLevel() - 1); $j++) {
                                     ?>
-                                    <img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/leer.png'>
+                                    <img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\leer.png'>
                                     <?php
                                 }
                                 if ($katVO->getEndNode() === 1) {
                                     ?>
-                                    <img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/plus.png'>
+                                    <img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\plus.png'>
                                     <?php
                                     $neu = 1;
                                 } else {
                                     ?>
-                                    <img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/leer.png'><img src='../../img/minus.png'>
+                                    <img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\leer.png'><img src='..\images\minus.png'>
                                     <?php
                                 }
 //                                echo $katVO->getName() . " (" . $katVO->getId() . ")";
@@ -71,7 +71,7 @@ $katIdAnzeige = "-1";
                                     echo"<tr><td>";
                                     ?>
                                     <a href='kategorieHinzufuegen.php?par=neuInHierarchie&beforeId=0&eventId=<?php echo $email ?? ''; ?>&insertLevel=0'>
-                                        <img src='../../img/neu.png'>Neue Hauptkategorie
+                                        <img src='..\images\neu.png'>Neue Hauptkategorie
                                         <span class="glyphicon glyphicon-plus-sign"></span></a>
                                         <?php
                                         echo"</tr></td>";
