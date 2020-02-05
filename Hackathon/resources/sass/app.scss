@@ -20,10 +20,12 @@ body {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .full-height {
-  height: 100vh;
+  // height: 100vh;
 }
 
 .flex-center {
@@ -47,12 +49,21 @@ body {
 }
 
 .title {
-  font-size: 84px;
+  font-size: clamp(25px, 8vw, 60px);
+  font-weight: bold;
+  // line-height: 12vw;
+  margin-top: calc(7vw + 15px);
 }
 
 .subtitle {
-  margin-top: -20px;
-  font-size: 64px;
+  font-size: clamp(32px, 10vw, 75px);
+  margin-top: -30px;
+}
+
+.paragraph {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: left;
 }
 
 .links>a {
@@ -66,5 +77,5 @@ body {
 }
 
 .m-b-md {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }

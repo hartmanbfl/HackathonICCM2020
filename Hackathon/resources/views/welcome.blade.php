@@ -34,9 +34,21 @@
                     Gospel Conversations
                 </div>
                 <div class="subtitle m-b-md">
-                    Thread Editor
+                    Thread Manager
                 </div>
-
+                <div class="paragraph">
+                    The Gospel Conversations voice assistant skill 
+                    acts as a sparing partner to let you
+                    practice sharing your faith. Alexa asks you a 
+                    question, you respond, it responds to you, 
+                    and now you’re having a conversation. If you 
+                    say something where it doesn’t have a programmed 
+                    response, then it asks if you would like to hear 
+                    one where it has a response, and now it is 
+                    training you. <br /><br />
+                    Available soon for Amazon Alexa.
+                </div>
+                <img src="..\images\amazonalexa.png" />
                 
 {{-- 
                 <div class="links">
