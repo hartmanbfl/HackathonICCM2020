@@ -10,6 +10,8 @@ class Sentence extends Component
     public $conversation_id;
     public $sentence;
 
+    public $hasChildren;
+
     public $editMode;
     public $deleteConfirm;
     public $deleted;
@@ -18,6 +20,8 @@ class Sentence extends Component
     {
         $this->conversation_id = $conversation->id;
         $this->sentence = $conversation->sentence;
+
+        $this->hasChildren = $conversation->conversations->count() > 0;
 
         $this->editMode = false;
         $this->deleteConfirm = false;

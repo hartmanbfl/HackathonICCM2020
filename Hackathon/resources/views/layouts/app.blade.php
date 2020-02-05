@@ -12,7 +12,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/93028f8932.js" crossorigin="anonymous"></script>
-    <script src="/js/listCollapse.js" type="text/javascript" language="javascript1.2"></script>
+{{--    <script src="/js/listCollapse.js" type="text/javascript" language="javascript1.2"></script>--}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -23,7 +23,7 @@
 
     @livewireStyles
 </head>
-<body onload="compactMenu('Threads',true,'&gt; ');">
+<body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
