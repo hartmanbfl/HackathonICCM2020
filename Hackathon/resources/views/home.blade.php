@@ -13,9 +13,9 @@
                 let liItems = document.querySelectorAll("#Threads li");
                 liItems.forEach(function(liItem) {
                     liItem.addEventListener('click', function(evt) {
+                        evt.stopPropagation();
 
                         this.querySelectorAll(":scope > ul > li.toggle").forEach(function(childLiItem) {
-                            console.log(childLiItem.classList);
                            childLiItem.classList.toggle('hide');
                         });
                     });
