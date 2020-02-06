@@ -10,7 +10,7 @@ class ConversationApiController extends Controller
 {
     public function random(Request $request)
     {
-        $conversations = Conversation::whereConversationId(0)->get();
+        $conversations = Conversation::whereConversationId(null)->get();
 
         return new ConversationResource($conversations->random());
     }
