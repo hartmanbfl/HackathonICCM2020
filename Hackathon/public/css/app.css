@@ -10955,7 +10955,7 @@ ul {
 }
 
 .toggle {
-  color: green;
+  color: black;
 }
 
 .hide {
@@ -10964,5 +10964,13 @@ ul {
 
 .show {
   display: block;
+}
+
+.general-icon {
+  font-size: 1em;
+}
+
+.caution {
+  color: #c50505;
 }
 
