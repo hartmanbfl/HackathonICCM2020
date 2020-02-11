@@ -15,6 +15,9 @@
                     liItem.addEventListener('click', function(evt) {
                         evt.stopPropagation();
 
+                        if(this.matches("button") || this.matches("input"))
+                            return;
+
                         this.querySelectorAll(":scope > ul > li.toggle").forEach(function(childLiItem) {
                            childLiItem.classList.toggle('hide');
                         });
