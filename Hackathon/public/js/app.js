@@ -37128,8 +37128,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/llevering/Documents/Bedrijf/iccm/2020/HackathonICCM2020/Hackathon/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/llevering/Documents/Bedrijf/iccm/2020/HackathonICCM2020/Hackathon/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\eDOT-Code\gc\HackathonICCM2020\Hackathon\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\eDOT-Code\gc\HackathonICCM2020\Hackathon\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

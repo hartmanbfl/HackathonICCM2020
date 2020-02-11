@@ -10954,11 +10954,23 @@ ul {
   margin-bottom: 10px;
 }
 
+.toggle {
+  color: black;
+}
+
 .hide {
   display: none;
 }
 
 .show {
   display: block;
+}
+
+.general-icon {
+  font-size: 1em;
+}
+
+.caution {
+  color: #c50505;
 }
 
