@@ -1,10 +1,10 @@
-<li class="{{($show ? "show" : "hide")}} toggle list"> @livewire('sentence', $conversation)<br>
+<li class="list"> @livewire('sentence', $conversation)<br>
     @if ($conversation->conversations)
-        <ul>
+        <ul class="{{($show ? "show" : "hide")}} toggle">
             @foreach ($conversation->conversations as $conversation)
                 @include('conversation-partial', ['conversation' => $conversation, 'show' => false])
             @endforeach
-                @livewire('new-sentence', $conversation)
+            @livewire('new-sentence', $conversation)
         </ul>
     @endif
 </li>

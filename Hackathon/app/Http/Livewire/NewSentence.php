@@ -17,7 +17,10 @@ class NewSentence extends Component
 
     public function mount($conservation)
     {
-        $this->parent_conversation_id = $conservation->id;
+        $this->parent_conversation_id = null;
+        if(!is_null($conservation)) {
+            $this->parent_conversation_id = $conservation->id;
+        }
 
         $this->added = false;
         $this->button = true;
