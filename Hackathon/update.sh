@@ -12,8 +12,11 @@ php artisan config:clear
 php artisan view:clear
 composer update
 
-# Genereate phpdocs
+# Generate phpdocs
 php artisan ide-helper:models -W -n
+
+# Update javascript dependencies
+npm install
 
 # Generate PhpStorm meta, when using PHP storm
 #php artisan ide-helper:meta -n
