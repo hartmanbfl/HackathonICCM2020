@@ -10954,6 +10954,10 @@ ul {
   margin-bottom: 10px;
 }
 
+.toggle {
+  color: green;
+}
+
 .hide {
   display: none;
 }
