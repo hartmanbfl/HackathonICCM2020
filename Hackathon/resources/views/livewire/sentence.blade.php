@@ -2,9 +2,9 @@
     @if(!$deleted)
     @if(!$deleteConfirm)
     @if($editMode)
-    <input type="text" wire:model="sentence" wire:keydown.enter="save">
-    <button wire:click="save">Save</button>
-    <button wire:click="cancel">Cancel</button>
+    <input class="tEntry" type="text" wire:model="sentence" wire:keydown.enter="save"> &nbsp;
+    <a class="fa-save fas gIcon" wire:click="save"></a> &nbsp;
+    <a class="fa-window-close fas gIcon caution" wire:click="cancel"></a>
     @else
 
     @if(!$hasChildren)

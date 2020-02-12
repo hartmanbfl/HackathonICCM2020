@@ -10970,3 +10970,15 @@ ul {
   color: #960303;
 }
 
+.tEntry {
+  width: calc(100% - 50px);
+}
+
+.addThread {
+  color: purple;
+}
+
+.list {
+  line-height: auto;
+}
+
