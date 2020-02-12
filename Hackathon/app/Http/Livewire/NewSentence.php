@@ -18,7 +18,7 @@ class NewSentence extends Component
     public function mount($conservation)
     {
         $this->parent_conversation_id = null;
-        if(!is_null($conservation)) {
+        if (!is_null($conservation)) {
             $this->parent_conversation_id = $conservation->id;
         }
 
@@ -44,5 +44,11 @@ class NewSentence extends Component
     public function showInput()
     {
         $this->button = false;
+    }
+
+    public function cancel()
+    {
+        $this->added = false;
+        $this->button = true;
     }
 }
