@@ -2,7 +2,9 @@
     @if(!$deleted)
         @if(!$deleteConfirm)
             @if($editMode)
-                <input type="text" wire:model="sentence" wire:keydown.enter="save"> <button wire:click="save">Save</button>
+                <input type="text" wire:model="sentence" wire:keydown.enter="save"> 
+                <button wire:click="save">Save</button>
+                <button wire:click="cancel">Cancel</button>
             @else
             {{-- Any clue how to toggle the symbol? --}}
             {{-- <i class="{{($toggle ? "fa-chevron-right" : "n")}} fas icn"></i> {{$sentence}} <a href="#" wire:click="edit">Edit</a> <a href="#" wire:click="delete">Remove</a> --}}

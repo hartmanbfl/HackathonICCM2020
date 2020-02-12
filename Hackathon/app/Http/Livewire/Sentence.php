@@ -38,6 +38,12 @@ class Sentence extends Component
         $this->editMode = !$this->editMode;
     }
 
+    public function cancel()
+    {
+        // do nothing
+        $this->editMode = false;
+    }
+
     public function save()
     {
         $conversation = Conversation::find($this->conversation_id);
