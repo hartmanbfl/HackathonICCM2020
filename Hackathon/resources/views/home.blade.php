@@ -31,5 +31,29 @@
                     });
                 });
         </script>
+        <script src="https://js.pusher.com/5.1/pusher.min.js"></script>
+        <script>
+            // Enable pusher logging - don't include this in production
+            Pusher.logToConsole = true;
+
+            // instantiate a pusher object 
+            var pusher = new Pusher('fafb12fecf9ffef19470', {
+              cluster: 'eu',
+              forceTLS: true
+            });
+
+            // subscribe to the channel we specified in the event
+            console.log('JS:  Subscribing to GospelConversations');
+            var channel = pusher.subscribe('GospelConversations');
+
+            // bind a function to the event
+            channel.bind('App\\Events\\ThreadAdded', threadAddedHandler);
+
+            function threadAddedHandler(data) {
+                console.log(`DATA: ${data}`)
+//                alert('In window refresh!');
+              location.reload();
+            }
+        </script>
 
 @endsection

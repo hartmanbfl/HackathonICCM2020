@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Conversation;
 use Livewire\Component;
+use App\Events\ThreadAdded;
 
 class NewSentence extends Component
 {
@@ -39,6 +40,10 @@ class NewSentence extends Component
         $conversation->save();
 
         $this->added = true;
+
+        // Fire off the ThreadAdded event
+        error_log('Attempting to fire off the ThreadAdded event');
+        event(new ThreadAdded('Thread has been added'));
     }
 
     public function showInput()
