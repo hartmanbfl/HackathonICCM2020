@@ -13,8 +13,9 @@
     <i class="fa-chevron-right fas icn"></i><i class="fa-chevron-down children fas icn hide"></i>
     @endif
 
-    {{$sentence}} &nbsp;<a class="fa-pen-square fas gIcon" wire:click="edit"></a> &nbsp;<i
-        class="fa-trash-alt fas gIcon caution" wire:click="delete"></i>
+    {{$sentence}} &nbsp;<a class="fa-pencil-alt fas gIcon" wire:click="edit"></a> &nbsp;
+    <i class="fa-plus fas gIcon" wire:click="delete"></i> &nbsp;
+    <i class="fa-trash-alt fas gIcon caution" wire:click="delete"></i>
     @endif
     @else
     {{$sentence}}
