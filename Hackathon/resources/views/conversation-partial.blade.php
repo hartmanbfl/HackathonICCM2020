@@ -4,7 +4,7 @@
       @foreach($conversation->conversations as $conversation)
         @include('conversation-partial', ['conversation' => $conversation, 'show' => false])
       @endforeach
-      @livewire('new-sentence', $conversation)
+      {{-- @livewire('new-sentence', $conversation) --}}
     </ul>
   @endif
 </li>

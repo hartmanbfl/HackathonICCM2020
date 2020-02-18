@@ -7,7 +7,8 @@
     @include('conversation-partial', ['conversation' => $conversation, 'show' => false])
   @endforeach
 
-  @livewire('new-sentence', null)
+  {{-- Commented out because we need a new way to create a new conversation. --}}
+  {{-- @livewire('new-sentence', null) --}}
 </ul>
 
 <script>

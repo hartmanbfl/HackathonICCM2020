@@ -11,7 +11,18 @@
         @else
           <i class="fa-chevron-right fas icn"></i><i class="fa-chevron-down children fas icn hide"></i>
         @endif
-        {{ $sentence }} &nbsp;<a class="fa-pen-square fas gIcon" wire:click="edit"></a> &nbsp;<i class="fa-trash-alt fas gIcon caution" wire:click="delete"></i>
+        {{ $sentence }} &nbsp;<a class="fa-pencil-alt fas gIcon" wire:click="edit"></a> &nbsp;<i class="fa-plus fas gIcon" wire:click="addChild"></i> &nbsp;<i class="fa-trash-alt fas gIcon caution" wire:click="delete"></i>
+
+        {{-- This @if reveals the controls to create a child to the current conversation --}}
+        @if($newChild)
+          <ul class="newChildField">
+              <li class="list">
+                <input class="tEntry" type="text" wire:model="newSentence" wire:keydown.enter="add"> &nbsp;
+                <i class="fa-save fas gIcon" wire:click="add"></i> &nbsp;
+                <i class="fa-window-close fas gIcon caution" wire:click="cancel"></i>
+              </li>
+          </ul>
+        @endif
       @endif
     @else
 
@@ -21,9 +32,6 @@
         <i class="fa-chevron-right fas icn"></i><i class="fa-chevron-down children fas icn hide"></i>
       @endif
 
-      {{ $sentence }} &nbsp;<a class="fa-pencil-alt fas gIcon" wire:click="edit"></a> &nbsp;
-      <i class="fa-plus fas gIcon" wire:click="delete"></i> &nbsp;
-      <i class="fa-trash-alt fas gIcon caution" wire:click="delete"></i>
     @endif
   @else
     {{ $sentence }}

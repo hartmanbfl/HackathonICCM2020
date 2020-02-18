@@ -7,48 +7,48 @@ use Livewire\Component;
 
 class NewSentence extends Component
 {
-    public $parent_conversation_id;
+  public $parent_conversation_id;
 
-    public $sentence;
+  public $sentence;
 
-    public $added;
+  public $added;
 
-    public $button;
+  public $button;
 
-    public function mount($conservation)
-    {
-        $this->parent_conversation_id = null;
-        if (!is_null($conservation)) {
-            $this->parent_conversation_id = $conservation->id;
-        }
-
-        $this->added = false;
-        $this->button = true;
+  public function mount($conservation)
+  {
+    $this->parent_conversation_id = null;
+    if (!is_null($conservation)) {
+      $this->parent_conversation_id = $conservation->id;
     }
 
-    public function render()
-    {
-        return view('livewire.new-sentence');
-    }
+    $this->added = false;
+    $this->button = true;
+  }
 
-    public function add()
-    {
-        $conversation = new Conversation();
-        $conversation->sentence = $this->sentence;
-        $conversation->conversation_id = $this->parent_conversation_id;
-        $conversation->save();
+  public function render()
+  {
+    return view('livewire.new-sentence');
+  }
 
-        $this->added = true;
-    }
+  public function add()
+  {
+    $conversation = new Conversation();
+    $conversation->sentence = $this->sentence;
+    $conversation->conversation_id = $this->parent_conversation_id;
+    $conversation->save();
 
-    public function showInput()
-    {
-        $this->button = false;
-    }
+    $this->added = true;
+  }
 
-    public function cancel()
-    {
-        $this->added = false;
-        $this->button = true;
-    }
+  public function showInput()
+  {
+    $this->button = false;
+  }
+
+  public function cancel()
+  {
+    $this->added = false;
+    $this->button = true;
+  }
 }
