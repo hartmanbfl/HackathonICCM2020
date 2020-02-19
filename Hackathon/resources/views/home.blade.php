@@ -9,6 +9,7 @@
 
   {{-- Commented out because we need a new way to create a new conversation. --}}
   {{-- @livewire('new-sentence', null) --}}
+  <i class="fa-plus fas gIcon"></i>
 </ul>
 
 <script>

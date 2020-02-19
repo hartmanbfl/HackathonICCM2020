@@ -21,6 +21,7 @@
       <div class="top-right links">
         @auth
           <a href="{{ url('/home') }}">Home</a>
+          <a href="{{ url('/outline') }}">Outline</a>
         @else
           <a href="{{ route('login') }}">Login</a>
 

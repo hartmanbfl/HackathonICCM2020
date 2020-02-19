@@ -18,5 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/outline', 'OutlineController@index')->name('outline');
 
 //Route::resource('/conversation', 'ConversationController')->name('conversation');
