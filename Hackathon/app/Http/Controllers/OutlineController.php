@@ -26,6 +26,6 @@ class OutlineController extends Controller
     public function index()
     {
         $conversations = Conversation::whereConversationId(null)->orderBy('sentence')->get();
-        return view('livewire/outline', ['conversations' => $conversations]);
+        return view('/livewire/outline', ['conversations' => $conversations]);
     }
 }
